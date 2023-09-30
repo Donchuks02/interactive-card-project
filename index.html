@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+
+
+
+    <div class="main-container">
+        <div class="left-container">
+            <!-- ///////-------CARD HTML------/////////// -->
+            <div class="front-card-div">
+                <img class="front-card" src="./images/bg-card-front.png" alt="">
+                <div class="front-card-details">
+                    <img class="card-logo" src="./images/card-logo.svg" alt="">
+                    <p id="cardNumber">0000 0000 0000 0000</p>
+                    <div id="cardNameSection">
+                        <p id="card-name-text">Jane Appleseed</p>
+                        <p id="card-date"><span id="MM">00</span>/<span id="YY">00</span></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="back-card-div">
+                <img src="./images/bg-card-back.png" alt="">
+                <div class="cvc-num">
+                    <p class="cvcDefaultText">000</p>
+                </div>
+            </div>
+        </div>
+        <!-- ///////---------RIGHT CONTAINER----------//////// -->
+        <div class="right-container">
+            <section class="inputs-section">
+                <div class="nameInput">
+                    <label for="name">cardholder name</label><br>
+                    <input type="text" name="name" id="cardNameField" placeholder="e.g Jane Applessed" maxlength="15" required><br>
+                </div>
+                <div class="numInput">
+                    <label for="card-num">card number</label><br>
+                    <input type="text" name="card-num" id="cardNumField" placeholder="e.g 1234 5678 9123 0000" maxlength="19">
+                    <p class="errorMessage1"></p>
+                </div>
+
+
+                <div class="date-container">
+                    <div class="date-div">
+                        <label for="exp-date">exp.date(mm/yy)</label> <br>
+                        <input type="text" name="mm" id="MM-field" placeholder="MM" maxlength="2">
+                        <input type="text" name="yy" id="YY-field" placeholder="YY" maxlength="2">
+                        <p class="errorMessage2"></p>
+                    </div>
+                    <div class="cvc-div">
+                        <label for="cvc">cvc</label><br>
+                        <input type="text" name="cvc" id="cvcField" placeholder="e.g 123" maxlength="3">
+                        <p class="errorMessage3"></p>
+
+
+                    </div>
+                </div>
+                <!-- ////-------CONFIRM BUTTON-------////// -->
+                <input class="confirmBtn" type="button" value="Confirm" disabled>
+
+
+
+                <p class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://x.com/Dev_Chukwudi?s=09">Dev_Chukwudi</a>.
+                </p>
+            </section>
+        </div>
+
+
+        <!-- Completed state start -->
+
+
+        <div class="thank-you-container">
+
+            <img src="./images/icon-complete.svg" alt="">
+            <h4>Thank you!</h4>
+            <p> We've added your card details
+            </p>
+
+            <input class="continue" type="button" value="Continue">
+            <p class="attribution">Challenge by Frontend Mentor</p>
+            <p class="attribution">Coded by <a href="https://x.com/Dev_Chukwudi?s=09">Dev_Chukwudi</a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
