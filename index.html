@@ -45,11 +45,11 @@
             <section class="inputs-section">
                 <div class="nameInput">
                     <label for="name">cardholder name</label><br>
-                    <input type="text" name="name" id="cardNameField" placeholder="e.g Jane Applessed" maxlength="15" required><br>
+                    <input type="text" name="name" id="cardNameField" placeholder="e.g Jane Applessed" maxlength="15" required autocomplete="off"><br>
                 </div>
                 <div class="numInput">
                     <label for="card-num">card number</label><br>
-                    <input type="text" name="card-num" id="cardNumField" placeholder="e.g 1234 5678 9123 0000" maxlength="19">
+                    <input type="text" name="card-num" id="cardNumField" placeholder="e.g 1234 5678 9123 0000" maxlength="19" autocomplete="off">
                     <p class="errorMessage1"></p>
                 </div>
 
@@ -57,13 +57,13 @@
                 <div class="date-container">
                     <div class="date-div">
                         <label for="exp-date">exp.date(mm/yy)</label> <br>
-                        <input type="text" name="mm" id="MM-field" placeholder="MM" maxlength="2">
-                        <input type="text" name="yy" id="YY-field" placeholder="YY" maxlength="2">
+                        <input type="text" name="mm" id="MM-field" placeholder="MM" maxlength="2" autocomplete="off">
+                        <input type="text" name="yy" id="YY-field" placeholder="YY" maxlength="2" autocomplete="off">
                         <p class="errorMessage2"></p>
                     </div>
                     <div class="cvc-div">
                         <label for="cvc">cvc</label><br>
-                        <input type="text" name="cvc" id="cvcField" placeholder="e.g 123" maxlength="3">
+                        <input type="text" name="cvc" id="cvcField" placeholder="e.g 123" maxlength="3" autocomplete="off">
                         <p class="errorMessage3"></p>
 
 
