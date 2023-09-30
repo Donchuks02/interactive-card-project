@@ -234,7 +234,7 @@
        .card-logo {
            width: auto;
            height: 30px;
-           margin-bottom: 10px;
+           margin-bottom: 6px;
        }
        #cardNumber {
            margin-bottom: 8px;
@@ -242,7 +242,7 @@
            letter-spacing: 0px;
        }
        #cardNameSection {
-           font-size: .8rem;
+           font-size: .6rem;
            display: flex;
            justify-content: space-between;
        }
